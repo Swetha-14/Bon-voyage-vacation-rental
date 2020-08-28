@@ -1,0 +1,17 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="jumbotron">
+        <h1 class="display-3 text-light">Get out and stretch your imagination</h1>
+        <p class="lead text-light">You don’t have to go far to find a world of wonder.</p>
+        <hr class="my-4">
+        <p class="text-light">Book any places around the world and visit them whenever you like !</p>
+        <p class="lead">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search by City">
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </p>
+    </div>
+{% endblock %}

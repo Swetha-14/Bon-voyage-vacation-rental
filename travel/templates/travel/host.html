@@ -1,0 +1,27 @@
+{% extends "travel/layout.html" %}
+{% load static %}
+
+{% block body %}
+    
+    {% if form %}
+        <h2>HOST&nbsp;&nbsp;YOUR&nbsp;&nbsp;PLACE</h2>
+        <br/>
+        <div class="form-group form">
+            <form action = "{% url 'host' %}"  method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input class="btn btn-success" type="submit" value="Submit">
+            </form>
+        </div>
+    {% else %}
+        <h2>EDIT&nbsp;&nbsp;YOUR&nbsp;&nbsp;PLACE</h2>
+        <br/>
+        <div class="form-group form">
+            <form action = "{% url 'edit' place_id %}"  method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form1.as_p }}
+                <input class="btn btn-success" type="submit" value="Save">
+            </form>
+        </div>
+    {% endif %}
+{% endblock %}
