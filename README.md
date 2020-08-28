@@ -2,7 +2,7 @@
 
 **A website like Airbnb, an online marketplace which lets people rent out their properties or spare rooms to guests and to book hotels and much more !**
 
-File and Directories:
+Files and Directories:
 
 - ``` travel ``` - main application directory.
     - ``` static/travel ``` -  contains all static content.
